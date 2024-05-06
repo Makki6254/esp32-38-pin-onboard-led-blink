@@ -1,0 +1,17 @@
+// Pin number for the LED
+const int ledPin = 1; // GPIO2 is commonly used for onboard LED on ESP32
+
+void setup() {
+  // Initialize the LED pin as an output
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // Turn the LED on (HIGH)
+  digitalWrite(ledPin, HIGH);
+  delay(1000); // Wait for 1 second
+
+  // Turn the LED off (LOW)
+  digitalWrite(ledPin, LOW);
+  delay(1000); // Wait for 1 second
+}
